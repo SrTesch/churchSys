@@ -10,13 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_06_30_174010) do
-  create_table "pessoas", force: :cascade do |t|
-    t.string "nome"
-    t.integer "idade"
-    t.string "email"
-    t.string "enderecoL1"
-    t.integer "numCasa"
+ActiveRecord::Schema[7.1].define(version: 2024_07_03_044655) do
+  create_table "membros", force: :cascade do |t|
+    t.string "NomeCompleto"
+    t.date "DataNascimento"
+    t.string "Endereco"
+    t.string "telefone"
+    t.string "Area"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

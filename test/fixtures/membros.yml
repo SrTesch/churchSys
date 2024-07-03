@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  NomeCompleto: MyString
+  DataNascimento: 2024-07-03
+  Endereco: MyString
+  telefone: MyString
+  Area: MyString
+
+two:
+  NomeCompleto: MyString
+  DataNascimento: 2024-07-03
+  Endereco: MyString
+  telefone: MyString
+  Area: MyString
