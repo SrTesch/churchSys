@@ -1,14 +1,34 @@
 <p style="color: green"><%= notice %></p>
 
 <h1>Membros</h1>
-
-<div id="membros">
-  <% @membros.each do |membro| %>
-    <%= render membro %>
-    <p>
-      <%= link_to "Show this membro", membro %>
-    </p>
-  <% end %>
-</div>
-
-<%= link_to "New membro", new_membro_path %>
+<table class="table table-striped table-bordered table-hover">
+  <thead class="thead-dark">
+    <tr>
+      <th>Nome Completo</th>
+      <th>Data de Nascimento</th>
+      <th>Endereço</th>
+      <th>Telefone</th>
+      <th>Área</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+  <div id="membros">
+    <% @membros.each do |membro| %>
+      <tr class="table-row">
+        <td><%= membro.NomeCompleto%> </td>
+        <td><%= membro.DataNascimento %></td>
+        <td><%= membro.Endereco %></td>
+        <td><%= membro.telefone %></td>
+        <td><%= membro.Area %></td>
+        <td><%= link_to "Mostrar", membro %></td>
+        <td><%= link_to "Editar", edit_membro_path(membro) %></td>
+        <td><%= button_to "Apagar", membro, method: :delete, class:"btn btn-secondary" %></td>
+      </tr>
+    <% end %>
+  </div>
+  </tbody>
+</table>
+<%= link_to "Novo membro", new_membro_path, class:"btn btn-secondary" %>
