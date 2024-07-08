@@ -5,5 +5,5 @@
 <br>
 
 <div>
-  <%= link_to "Voltar", root_path %>
+  <%= link_to "Voltar", user_signed_in? ? authenticated_root_path : unauthenticated_root_path %>
 </div>

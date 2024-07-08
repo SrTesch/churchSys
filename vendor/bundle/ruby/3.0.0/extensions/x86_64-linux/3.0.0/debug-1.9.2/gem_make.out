@@ -1,0 +1,16 @@
+current directory: /home/pedro/testeRails/friend/vendor/bundle/ruby/3.0.0/gems/debug-1.9.2/ext/debug
+/usr/bin/ruby -I /usr/lib/ruby/3.0.0 extconf.rb
+creating Makefile
+
+current directory: /home/pedro/testeRails/friend/vendor/bundle/ruby/3.0.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20240706-4810-n7wajo sitelibdir\=./.gem.20240706-4810-n7wajo clean
+
+current directory: /home/pedro/testeRails/friend/vendor/bundle/ruby/3.0.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20240706-4810-n7wajo sitelibdir\=./.gem.20240706-4810-n7wajo
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: /home/pedro/testeRails/friend/vendor/bundle/ruby/3.0.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20240706-4810-n7wajo sitelibdir\=./.gem.20240706-4810-n7wajo install
+/usr/bin/install -c -m 0755 debug.so ./.gem.20240706-4810-n7wajo/debug
